@@ -1,21 +1,14 @@
-# Project : Are you playing the  Banjo tonight?
+# Make your own Codewars Style Challenge
 
-This project implements a function areYouPlayingBanjo that determines whether a given name will get an opportunity to play with British-born, Melbourne-based composer/songwriter Hana Stretton at Royal Albert Hall tonight. 🎸🎺🎷🎻🥁
-
-If it does match, the function returns a string indicating the person will be playing  🪕banjo with Hana Stretton at the Royal Albert Hall. Otherwise, it returns a string stating the person can attend the performance instead.
+In this workshop, you'll create your own programming challenge for others to solve, similar to the ones you might have tackled on Codewars. You'll write unit tests to validate solutions. Then you can share your challenge with other bootcampers for them to solve. If a submitted solution passes all your tests, it will be considered a correct solution - just like on Codewars. This is a great chance to get creative and come up with a programming challenge to stump your peers!
 
 ## 💡 OBJECTIVES FOR THE WORKSHOP
 
-Here's a glimpse of what you'll be achieving by the end of this workshop's challenge.
+Here's a glimpse of what you'll be achieving by the end of this workshop:
 
-To determine if a person plays banjo based on their name, the objectives are:
-
-Accurate name evaluation: Correctly identify if a given condition is met.
-Clear output generation: Provide appropriate textual output based on the name evaluation.
-Error handling: Gracefully handle unexpected input (e.g., empty strings, names too short or long).
-Readability: Write code that is easy to understand and maintain.
-
-
+- Clearly describing a problem/task that you want others to solve
+- Writing unit tests to check whether their solution to your task is correct
+- Present your project plan, story, and anything else you feel supports your creation process and final outcome in a document
 
 ## 🎟️ TICKETS
 
@@ -35,40 +28,26 @@ You will be making one kata each, but you will be in development teams. The aim 
 
 ### 🎫 Ticket 2 - Plan your kata
 
-## MVP (Minimum Viable Product) 1:
+Attack this as you would any other problem - plan, plan, plan and use our agile approach to create steps that allow you to build MVPs and incrementally reach your stretch goals. Brainstorm options with a technique like Disney Ideation. Once you have a compelling challenge and story idea, start breaking it down. Think about the goals of your challenge, and the scenarios you could provide to test if people have reached those goals. Provide any examples or additional details that are necessary for someone taking on your kata to understand the problem, but don't give away so much that it removes the challenge. You want to strike a balance - not too vague but not spoon-feeding the solution either.
 
-Core functionality: Accurately determine if a given name starts with a particular letter.
+Write your kata's scenario in a comment in `main.js` and include the start of an exported function that your audience will use to solve it (like you've seen on the katas you've done before). If it's useful to see an example:
 
-Output: Provide a clear and concise text output indicating if the person plays banjo.
-
-Additional considerations:
-
-Error handling: Implement basic error handling for invalid inputs (e.g., empty strings).
-
-Code readability: Write clean and maintainable code.
-
-This MVP focuses on the essential features of the project without unnecessary complexity. 
-
-
-Write your kata's scenario in a comment in `main.js` and include the start of an exported function that your audience will use to solve it (like you've seen on the katas you've done before). 
+```js
+/**
+ * Hello challenger! Your task is to write a function named `transformLength` which takes in a string and returns 1 if the length of the string is even and otherwise -1.
+ *
+ * Your implementation should handle strings whose length is between 0 (inclusive) and 2500 (inclusive).
+ *
+ * A few examples:
+ *    `transformLength("table")` should return -1 as the length of "table" is not even
+ *    `transformLength("wizard")` should return 1 as the length of "wizard" is even
+ */
+export function transformLength(string) {
+  // Good luck!
+}
+```
 
 ℹ️ The reason for leaving the function body empty is that you want the people solving your kata to write their own implementation from scratch. Your role is to provide the overall problem statement and function skeleton. The solving and coding is up to them! Leaving an incomplete skeleton function helps point them in the right direction without giving away a full working solution.
-
-
-## MVP 2: Handling Multiple Names
-Core Functionality
-Accurately determine if any name within a given array of names starts with a particular letter.
-Provide a clear and concise text output indicating if at least one person in the array plays banjo.
-
-Output
-A boolean value indicating whether at least one person in the array plays banjo.
-
-A list of names that start with the specified letter.
-
-Additional Considerations
-Error handling: Implement error handling for invalid inputs (e.g., empty array, non-string elements).
-Efficiency: Optimize the code for performance, especially when handling large arrays.
-Code readability: Maintain clean and maintainable code.
 
 ### 🎫 Ticket 3 - Write your kata
 
@@ -76,7 +55,24 @@ When drafting your test cases, consider the different inputs that could be passe
 
 Since you'll write tests before seeing people's solutions, focus on defining expected outputs for given inputs, without assumptions about how people actually wrote the code. You're testing for outcomes. You could follow a TDD workflow - write a failing test, then temporarily add code to pass it. Just be sure to remove the solution code before sharing the kata. This helps ensure your tests fail when logic is missing or incorrect and pass when implemented properly.
 
+If it's useful to see an example (continuing the `checkLength` example from earlier):
 
+```js
+import { test, expect } from "vitest";
+import { checkLength } from "./main.js";
+
+test("should return -1 for strings with an odd length", () => {
+  const expected = -1;
+  const actual = checkLength("table");
+  expect(actual).toBe(expected);
+});
+
+test("should return 1 for strings with an even length", () => {
+  const expected = 1;
+  const actual = checkLength("wizard");
+  expect(actual).toBe(expected);
+});
+```
 
 🎯 At this stage you should have a description of the problem in `main.js` and some tests in `main.test.js`.
 
@@ -84,6 +80,14 @@ Since you'll write tests before seeing people's solutions, focus on defining exp
 
 To verify your tests, temporarily add a working implementation to the solution function in `main.js`. Check that the tests fail before implementation and pass when the function is coded correctly. This validates that your tests accurately check for both incorrect and correct solutions. Remember to remove the solution code afterwards before sharing the kata.
 
+If it's useful to see an example (continuing the `checkLength` example from earlier):
+
+```js
+export function checkLength(string) {
+  // Temporarily added the line below to check if tests pass, but will remove it before committing and pushing.
+  return string.length % 2 === 0 ? 1 : -1;
+}
+```
 
 ### 🎫 Ticket 5 - Share your kata
 

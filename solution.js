@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript
+
 // import expect and test from Vitest
 import { describe, expect, test, assertType, expectTypeOf } from "vitest";
 
@@ -47,28 +49,27 @@ describe("areYouPlayingBanjo", () => {
 		expect(() =>
 			areYouPlayingBanjo("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")
 		).toThrowError("Name length must be between 2 and 50 characters");
-    });
-    
-    // // test-6 check if the datatype is valid
-    // test('if the function can handle valid names', () => {
-    //     expectTypeOf(areYouPlayingBanjo).toBeFunction()
-    //     expectTypeOf(areYouPlayingBanjo).parameter(0).toMatchTypeOf<string>()
-        
-    //     /assert that the first letter is a letter
-    //     const nameRegex = /^[a-zA-Z]/
+	});
 
-    //     // ensure its is a string
-    //     assertType < string >(areYouPlayingBanjo.parameter(0))
-        
-    //     // test with a valid name
-    //     const validName = 'Amy';
-    //     expect(nameRegex.test(validName)).toBe(true);
+	// // test-6 check if the datatype is valid
+	// test('if the function can handle valid names', () => {
+	//     expectTypeOf(areYouPlayingBanjo).toBeFunction()
+	//     expectTypeOf(areYouPlayingBanjo).parameter(0).toMatchTypeOf<string>()
 
-    //     // test with invalid name
-    //     const invalidName = "1Ellie";
-    //     expect(nameRegex.test(invalidName)).toBe(false);
-    // })
+	//     /assert that the first letter is a letter
+	//     const nameRegex = /^[a-zA-Z]/
 
+	//     // ensure its is a string
+	//     assertType < string >(areYouPlayingBanjo.parameter(0))
+
+	//     // test with a valid name
+	//     const validName = 'Amy';
+	//     expect(nameRegex.test(validName)).toBe(true);
+
+	//     // test with invalid name
+	//     const invalidName = "1Ellie";
+	//     expect(nameRegex.test(invalidName)).toBe(false);
+	// })
 
 	// test-6 if name has leading or trailing white spaces
 
