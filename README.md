@@ -1,4 +1,4 @@
-# Project : Are you playing the  Banjo tonight?
+# 🪕Project : Are you playing the  Banjo tonight? 🪕
 
 This project implements a function areYouPlayingBanjo that determines whether a given name will get an opportunity to play with British-born, Melbourne-based composer/songwriter Hana Stretton at Royal Albert Hall tonight. 🎸🎺🎷🎻🥁
 
