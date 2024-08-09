@@ -55,7 +55,7 @@ Write your kata's scenario in a comment in `main.js` and include the start of an
 ℹ️ The reason for leaving the function body empty is that you want the people solving your kata to write their own implementation from scratch. Your role is to provide the overall problem statement and function skeleton. The solving and coding is up to them! Leaving an incomplete skeleton function helps point them in the right direction without giving away a full working solution.
 
 
-## MVP 2: Handling Multiple Names
+## MVP 2: Handling Multiple Names in an Array
 Core Functionality
 Accurately determine if any name within a given array of names starts with a particular letter.
 Provide a clear and concise text output indicating if at least one person in the array plays banjo.
