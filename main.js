@@ -18,12 +18,14 @@
 export const artist = "Hana Stretton";
 export const venue = "Royal Albert Hall";
 
-export function areYouPlayingBanjo(name) {
-	// return empty string if name is empty
+
+// return empty string if name is empty
 	// name length to be between 2 and 50
 	// else throw error message "Name length must be between 2 and 50 characters"
 	// if name begins with r or R, return `${name} plays banjo with Hana Stretton at the Royal Albert Hall.`;
 	// else return not playing message
+export function areYouPlayingBanjo(name) {
+	
 }
 
 /**
@@ -42,10 +44,13 @@ export function areYouPlayingBanjo(name) {
 //   // Good luck!
 // }
 // ```
+
+// to enter an array of names 
+// return map on the names array to return the string
+// if array is empty, return "";
+// with the {name} plays banjo with Hana Stretton at the Royal Albert Hall tonight, if name begins with r or R.
+// or return {name} can attend the performance tonight., all other letters.
+//
 export function whoWillBePlayingBanjo(names) {
-	// return map on the names array to return the string
-	// if array is empty, return "";
-	// with the {name} plays banjo with Hana Stretton at the Royal Albert Hall tonight, if name begins with r or R.
-	// or return {name} can attend the performance tonight., all other letters.
-	//
+	
 }

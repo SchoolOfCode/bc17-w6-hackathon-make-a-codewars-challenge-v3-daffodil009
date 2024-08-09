@@ -48,41 +48,7 @@ describe("areYouPlayingBanjo", () => {
 			areYouPlayingBanjo("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")
 		).toThrowError("Name length must be between 2 and 50 characters");
     });
-    
-    // // test-6 check if the datatype is valid
-    // test('if the function can handle valid names', () => {
-    //     expectTypeOf(areYouPlayingBanjo).toBeFunction()
-    //     expectTypeOf(areYouPlayingBanjo).parameter(0).toMatchTypeOf<string>()
-        
-    //     /assert that the first letter is a letter
-    //     const nameRegex = /^[a-zA-Z]/
 
-    //     // ensure its is a string
-    //     assertType < string >(areYouPlayingBanjo.parameter(0))
-        
-    //     // test with a valid name
-    //     const validName = 'Amy';
-    //     expect(nameRegex.test(validName)).toBe(true);
-
-    //     // test with invalid name
-    //     const invalidName = "1Ellie";
-    //     expect(nameRegex.test(invalidName)).toBe(false);
-    // })
-
-
-	// test-6 if name has leading or trailing white spaces
-
-	// test-7 if name has mixed characters of upper and lower case
-
-	// test-8 if name has special characters
-
-	// test-9 if name has numbers
-
-	// test-10 if name is too long more than 50 characters
-
-	// test-11 if name is too short - just one letter
-
-	// test-12 if name has non-ascii characters(chinese)
 });
 
 describe("who will from your team will be playing banjo", () => {
@@ -104,15 +70,5 @@ describe("who will from your team will be playing banjo", () => {
 		expect(whoWillBePlayingBanjo(names)).toEqual(expected);
 	});
 
-	// test-2 - to handle empty array
 
-	// test- 3 to handle single name in the array with starting name R
-
-	// test-4 to handle single name in the array that does not begin with R
-
-	//  test-5 to handle case sensitivity
-
-	// test-6 to handle leading and trailing whitespace
-
-	// test-7 to handle non-string input
 });
